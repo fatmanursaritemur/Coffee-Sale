@@ -1,8 +1,9 @@
 package com.turkcell.entities.concretes;
 
+import com.turkcell.entities.Abstract.IEntity;
 import java.math.BigDecimal;
 
-public class Coffee {
+public class Coffee implements IEntity {
 
   private int coffeeId;
   private String coffeeName;

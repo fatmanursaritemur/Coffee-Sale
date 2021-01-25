@@ -1,4 +1,5 @@
-package com.turkcell.entities.abstracts;
+package com.turkcell.entities.Abstract;
+
 //kaldır
 public interface ICoffeeShop extends IEntity {
 

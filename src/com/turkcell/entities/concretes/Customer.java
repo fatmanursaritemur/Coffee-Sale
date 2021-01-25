@@ -1,6 +1,6 @@
 package com.turkcell.entities.concretes;
 
-import com.turkcell.entities.abstracts.ICustomer;
+import com.turkcell.entities.Abstract.ICustomer;
 
 public class Customer extends ICustomer {
   private int customerId;

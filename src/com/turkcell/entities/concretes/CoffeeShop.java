@@ -1,9 +1,10 @@
 package com.turkcell.entities.concretes;
 
+import com.turkcell.entities.Abstract.ICoffeeShop;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CoffeeShop {
+public class CoffeeShop implements ICoffeeShop {
 
   private int coffeeShopId;
   private String coffeeShopName;

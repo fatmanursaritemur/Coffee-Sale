@@ -1,6 +1,8 @@
 package com.turkcell.entities.concretes;
 
-public class Campaign {
+import com.turkcell.entities.Abstract.IEntity;
+
+public class Campaign implements IEntity {
  private int campaignId;
  private String campaignName;
 

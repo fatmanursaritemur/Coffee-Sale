@@ -1,4 +1,4 @@
-package com.turkcell.entities.abstracts;
+package com.turkcell.entities.Abstract;
 
 public class ICustomer implements IEntity {
 

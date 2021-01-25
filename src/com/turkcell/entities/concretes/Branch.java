@@ -1,6 +1,8 @@
 package com.turkcell.entities.concretes;
 
-public class Branch {
+import com.turkcell.entities.Abstract.IEntity;
+
+public class Branch implements IEntity {
 
   private int branchId;
   private int numberOfEmployees;

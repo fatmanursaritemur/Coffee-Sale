@@ -1,10 +1,11 @@
 package com.turkcell.entities.concretes;
 
+import com.turkcell.entities.Abstract.IEntity;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
-public class Order {
+public class Order implements IEntity {
   Customer customer;
   List<Coffee> totalOrder;
   Date sipariszamani;
