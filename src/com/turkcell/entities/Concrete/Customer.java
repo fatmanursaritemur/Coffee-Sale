@@ -1,27 +1,27 @@
-package com.turkcell.entities.concretes;
+package com.turkcell.entities.Concrete;
 
 import com.turkcell.entities.Abstract.ICustomer;
 
 public class Customer extends ICustomer {
   private int customerId;
   private String customerName;
-  private Campaign campaign;
+  private CoffeeShop coffeeShop;
   private double point;  // buranın tipine bak
 
   public Customer(int customerId, String customerName,
-      Campaign campaign, double point) {
+      CoffeeShop coffeeShop, double point) {
     this.customerId = customerId;
     this.customerName = customerName;
-    this.campaign = campaign;
+    this.coffeeShop = coffeeShop;
     this.point = point;
   }
 
-  public Campaign getCampaign() {
-    return campaign;
+  public CoffeeShop getCoffeeShop() {
+    return coffeeShop;
   }
 
-  public void setCampaign(Campaign campaign) {
-    this.campaign = campaign;
+  public void setCoffeeShop(CoffeeShop coffeeShop) {
+    this.coffeeShop = coffeeShop;
   }
 
   public int getCustomerId() {

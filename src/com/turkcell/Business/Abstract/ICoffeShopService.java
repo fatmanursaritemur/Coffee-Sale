@@ -1,6 +1,6 @@
 package com.turkcell.Business.Abstract;
 
-import com.turkcell.entities.concretes.CoffeeShop;
+import com.turkcell.entities.Concrete.CoffeeShop;
 import java.util.List;
 
 public interface ICoffeShopService {
@@ -8,5 +8,5 @@ public interface ICoffeShopService {
   void add(CoffeeShop coffeeShop);
   void update(CoffeeShop coffeeShop);
   void deleteAll();
-  void findById(String id);
+  void findById(int id);
 }

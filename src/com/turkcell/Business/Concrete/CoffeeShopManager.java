@@ -1,10 +1,10 @@
 package com.turkcell.Business.Concrete;
 
 import com.turkcell.Business.Abstract.ICoffeShopService;
-import com.turkcell.entities.concretes.CoffeeShop;
+import com.turkcell.entities.Concrete.CoffeeShop;
 import java.util.List;
 
-public class CoffeShopManager implements ICoffeShopService {
+public  abstract class CoffeeShopManager implements ICoffeShopService {
 
   @Override
   public List<CoffeeShop> getAll() {
@@ -27,7 +27,7 @@ public class CoffeShopManager implements ICoffeShopService {
   }
 
   @Override
-  public void findById(String id) {
+  public void findById(int id) {
 
   }
 }

@@ -1,6 +1,6 @@
 package com.turkcell.Business.Abstract;
 
-import com.turkcell.entities.concretes.Customer;
+import com.turkcell.entities.Concrete.Customer;
 import java.util.List;
 
 public interface ICustomerService {
@@ -8,5 +8,5 @@ public interface ICustomerService {
   void add(Customer customer);
   void update(Customer customer);
   void deleteAll();
-  void findById(String id);
+  void findById(int id);
 }

@@ -1,4 +1,4 @@
-package com.turkcell.entities.concretes;
+package com.turkcell.entities.Concrete;
 
 import com.turkcell.entities.Abstract.IEntity;
 import java.math.BigDecimal;
@@ -6,16 +6,17 @@ import java.util.Date;
 import java.util.List;
 
 public class Order implements IEntity {
-  Customer customer;
-  List<Coffee> totalOrder;
-  Date sipariszamani;
-  BigDecimal paymentTotal;
 
-  public Order(Customer customer, List<Coffee> totalOrder, Date sipariszamani,
+  private Customer customer;
+  private List<Coffee> totalOrder;
+  private Date timeOfPayment;
+  private BigDecimal paymentTotal;
+
+  public Order(Customer customer, List<Coffee> totalOrder, Date timeOfPayment,
       BigDecimal paymentTotal) {
     this.customer = customer;
     this.totalOrder = totalOrder;
-    this.sipariszamani = sipariszamani;
+    this.timeOfPayment = timeOfPayment;
     this.paymentTotal = paymentTotal;
   }
 
@@ -35,12 +36,12 @@ public class Order implements IEntity {
     this.totalOrder = totalOrder;
   }
 
-  public Date getSipariszamani() {
-    return sipariszamani;
+  public Date getTimeOfPayment() {
+    return timeOfPayment;
   }
 
-  public void setSipariszamani(Date sipariszamani) {
-    this.sipariszamani = sipariszamani;
+  public void setTimeOfPayment(Date timeOfPayment) {
+    this.timeOfPayment = timeOfPayment;
   }
 
   public BigDecimal getPaymentTotal() {

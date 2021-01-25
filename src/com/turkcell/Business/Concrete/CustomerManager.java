@@ -1,8 +1,8 @@
 package com.turkcell.Business.Concrete;
 
 import com.turkcell.Business.Abstract.ICustomerService;
-import com.turkcell.dataAccess.Abstract.ICustomerDao;
-import com.turkcell.entities.concretes.Customer;
+import com.turkcell.DataAccess.Abstract.ICustomerDao;
+import com.turkcell.entities.Concrete.Customer;
 import java.util.List;
 
 public class CustomerManager implements ICustomerService {
@@ -34,7 +34,7 @@ public class CustomerManager implements ICustomerService {
   }
 
   @Override
-  public void findById(String id) {
+  public void findById(int id) {
 
   }
 }

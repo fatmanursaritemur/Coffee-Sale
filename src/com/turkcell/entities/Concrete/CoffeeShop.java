@@ -1,7 +1,6 @@
-package com.turkcell.entities.concretes;
+package com.turkcell.entities.Concrete;
 
 import com.turkcell.entities.Abstract.ICoffeeShop;
-import java.util.ArrayList;
 import java.util.List;
 
 public class CoffeeShop implements ICoffeeShop {
@@ -11,15 +10,16 @@ public class CoffeeShop implements ICoffeeShop {
 
   private List<Branch> branchList;
   private List<Campaign> campaigns;
+  private List<Coffee> coffeeList;
 
   public CoffeeShop(int coffeeShopId, String coffeeShopName,
-      List<Branch> branchList,
-      List<Campaign> campaigns) {
-
+      List<Branch> branchList, List<Campaign> campaigns,
+      List<Coffee> coffeeList) {
     this.coffeeShopId = coffeeShopId;
     this.coffeeShopName = coffeeShopName;
     this.branchList = branchList;
     this.campaigns = campaigns;
+    this.coffeeList = coffeeList;
   }
 
   public int getCoffeeShopId() {
@@ -54,5 +54,11 @@ public class CoffeeShop implements ICoffeeShop {
     this.campaigns = campaigns;
   }
 
+  public List<Coffee> getCoffeeList() {
+    return coffeeList;
+  }
 
+  public void setCoffeeList(List<Coffee> coffeeList) {
+    this.coffeeList = coffeeList;
+  }
 }

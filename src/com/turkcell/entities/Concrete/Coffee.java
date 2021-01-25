@@ -1,21 +1,23 @@
-package com.turkcell.entities.concretes;
+package com.turkcell.entities.Concrete;
 
 import com.turkcell.entities.Abstract.IEntity;
 import java.math.BigDecimal;
-
+//--
 public class Coffee implements IEntity {
 
   private int coffeeId;
   private String coffeeName;
   private BigDecimal unitPrice;
+  private BigDecimal unitMinPrice;
   private CoffeeSize coffeeSize;
 
-  public Coffee(int coffeeId, String coffeeName, BigDecimal unitPrice,
+  public Coffee(int coffeeId, String coffeeName, BigDecimal unitMinPrice,
       CoffeeSize coffeeSize) {
     this.coffeeId = coffeeId;
     this.coffeeName = coffeeName;
-    this.unitPrice = unitPrice;
+    this.unitMinPrice = unitMinPrice;
     this.coffeeSize = coffeeSize;
+    this.unitPrice=unitMinPrice.multiply(coffeeSize.getValue());
   }
 
   public int getCoffeeId() {
@@ -48,5 +50,13 @@ public class Coffee implements IEntity {
 
   public void setCoffeeSize(CoffeeSize coffeeSize) {
     this.coffeeSize = coffeeSize;
+  }
+
+  public BigDecimal getUnitMinPrice() {
+    return unitMinPrice;
+  }
+
+  public void setUnitMinPrice(BigDecimal unitMinPrice) {
+    this.unitMinPrice = unitMinPrice;
   }
 }
