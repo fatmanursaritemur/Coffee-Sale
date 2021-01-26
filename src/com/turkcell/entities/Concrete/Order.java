@@ -8,11 +8,11 @@ import java.util.List;
 public class Order implements IEntity {
 
   private Customer customer;
-  private List<Coffee> totalOrder;
   private Date timeOfPayment;
   private BigDecimal paymentTotal;
+  private List<Product> totalOrder;
 
-  public Order(Customer customer, List<Coffee> totalOrder, Date timeOfPayment,
+  public Order(Customer customer, List<Product> totalOrder, Date timeOfPayment,
       BigDecimal paymentTotal) {
     this.customer = customer;
     this.totalOrder = totalOrder;
@@ -28,11 +28,11 @@ public class Order implements IEntity {
     this.customer = customer;
   }
 
-  public List<Coffee> getTotalOrder() {
+  public List<Product> getTotalOrder() {
     return totalOrder;
   }
 
-  public void setTotalOrder(List<Coffee> totalOrder) {
+  public void setTotalOrder(List<Product> totalOrder) {
     this.totalOrder = totalOrder;
   }
 

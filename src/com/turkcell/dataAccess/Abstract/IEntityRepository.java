@@ -1,4 +1,4 @@
-package com.turkcell.DataAccess.Abstract;
+package com.turkcell.dataAccess.Abstract;
 
 import com.turkcell.entities.Abstract.IEntity;
 import java.util.List;

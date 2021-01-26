@@ -1,0 +1,28 @@
+
+a
+java:S1854"?Remove this useless assignment to local variable "campaignDao".(βΜ§£ώÿÿÿÿ8ώ¥σσσ.
+]
+java:S1854"@Remove this useless assignment to local variable "coffeeMugDao".(ψ©Α£8Δ›τσ.
+Z
+java:S1854"=Remove this useless assignment to local variable "coffeeDao".(³ΑτΧ8ψ„τσ.
+^
+java:S1854"<Remove this useless assignment to local variable "campaign".(Β‰ίύÿÿÿÿ8‹Χ»σσ.
+]	java:S125"<This block of commented-out lines of code should be removed.(£Ύ±όÿÿÿÿ8Δ›τσ.
+M
+java:S1481"+Remove this unused "coffee" local variable.(Εψμ όÿÿÿÿ8Δ›τσ.
+R
+java:S1481"0Remove this unused "campaignDao" local variable.(βΜ§£ώÿÿÿÿ8ώ¥σσσ.
+P
+java:S1481".Remove this unused "coffeeMug" local variable.(ΎσκΝÿÿÿÿÿ8ψ„τσ.
+\
+java:S1854":Remove this useless assignment to local variable "coffee".(Εψμ όÿÿÿÿ8Δ›τσ.
+_
+java:S1854"=Remove this useless assignment to local variable "coffeeMug".(ΎσκΝÿÿÿÿÿ8ψ„τσ.
+]	java:S125"<This block of commented-out lines of code should be removed.(³«‹ϊωÿÿÿÿ8ώ¥σσσ.
+K
+java:S1481".Remove this unused "coffeeDao" local variable.(³ΑτΧ8ψ„τσ.
+N
+java:S1481"1Remove this unused "coffeeMugDao" local variable.(ψ©Α£8Δ›τσ.
+]	java:S125"<This block of commented-out lines of code should be removed.(νΩμ’ϊÿÿÿÿ8‹Χ»σσ.
+O
+java:S1481"-Remove this unused "campaign" local variable.(Β‰ίύÿÿÿÿ8‹Χ»σσ.

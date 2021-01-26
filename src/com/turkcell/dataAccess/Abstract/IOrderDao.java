@@ -1,6 +1,5 @@
-package com.turkcell.DataAccess.Abstract;
+package com.turkcell.dataAccess.Abstract;
 
-import com.turkcell.entities.Concrete.Customer;
 import com.turkcell.entities.Concrete.Order;
 import com.turkcell.entities.Dtos.OrderWithCustomerDto;
 import java.util.List;

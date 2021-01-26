@@ -1,0 +1,7 @@
+
+M
+java:S1068	"0Remove this unused "customerList" private field.(Ä‰«8¼õÍó.
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ş§
+b	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ˆ´“¶
+P
+java:S1068".Remove this unused "coffeeList" private field.(øÿì‹úÿÿÿÿ8ã¬áÍó.

@@ -8,5 +8,6 @@ public interface ICustomerService {
   void add(Customer customer);
   void update(Customer customer);
   void deleteAll();
+  void delete(Customer customer);
   void findById(int id);
 }

@@ -2,6 +2,7 @@ package com.turkcell.Business.Concrete;
 
 import com.turkcell.Business.Abstract.ICampaignService;
 import com.turkcell.entities.Concrete.Campaign;
+import com.turkcell.entities.Concrete.Order;
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -32,6 +33,6 @@ public abstract class AbstractCampaignManager implements ICampaignService {
 
   }
 
-  public  abstract boolean isItSuitable();
-  public  abstract BigDecimal applyCampaign();
+  public  abstract boolean isItSuitable(Order order);
+  public  abstract Order applyCampaign(Order order);
 }

@@ -3,7 +3,7 @@ package com.turkcell.entities.Concrete;
 import com.turkcell.entities.Abstract.ICoffeeShop;
 import java.util.List;
 
-public class CoffeeShop implements ICoffeeShop {
+public abstract class CoffeeShop implements ICoffeeShop {
 
   private int coffeeShopId;
   private String coffeeShopName;
@@ -11,15 +11,26 @@ public class CoffeeShop implements ICoffeeShop {
   private List<Branch> branchList;
   private List<Campaign> campaigns;
   private List<Coffee> coffeeList;
+  private List<Customer> customerList;
 
   public CoffeeShop(int coffeeShopId, String coffeeShopName,
       List<Branch> branchList, List<Campaign> campaigns,
-      List<Coffee> coffeeList) {
+      List<Coffee> coffeeList, List<Customer> customerList) {
+
     this.coffeeShopId = coffeeShopId;
     this.coffeeShopName = coffeeShopName;
     this.branchList = branchList;
     this.campaigns = campaigns;
     this.coffeeList = coffeeList;
+    this.customerList = customerList;
+  }
+
+  public List<Customer> getCustomerList() {
+    return customerList;
+  }
+
+  public void setCustomerList(List<Customer> customerList) {
+    this.customerList = customerList;
   }
 
   public int getCoffeeShopId() {

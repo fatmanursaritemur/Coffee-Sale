@@ -1,21 +1,32 @@
 package com.turkcell.Business.Concrete.Campaign;
 
+import com.turkcell.Business.Abstract.ICampaignService;
 import com.turkcell.Business.Concrete.AbstractCampaignManager;
+import com.turkcell.dataAccess.Abstract.ICampaignDao;
+import com.turkcell.entities.Concrete.Order;
 import java.math.BigDecimal;
 
 public class SecondaFreeCampaignManager extends AbstractCampaignManager {
+   ICampaignDao campaignDao;
 
-  public SecondaFreeCampaignManager() {
-    System.out.println("buraya geldi");
+  public SecondaFreeCampaignManager(ICampaignDao campaignDao) {
+    this.campaignDao = campaignDao;
   }
 
   @Override
-  public boolean isItSuitable() {
+  public boolean isItSuitable(Order order) {
+    campaignDao.isItSuitable(order);
     return false;
   }
 
   @Override
-  public BigDecimal applyCampaign() {
+  public Order applyCampaign(Order order) { //order döndür
+    if(isItSuitable(order)){
+      //oldu
+    }
+    {
+
+    }
     return null;
   }
 }
