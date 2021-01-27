@@ -2,8 +2,8 @@ package com.turkcell.entities.Dtos;
 
 public class OrderWithCustomerDto {
   private int orderId ;
-  public String customerName;
-  public String coffeShopName;
+  private String customerName;
+  private String coffeShopName;
 
   public OrderWithCustomerDto(int orderId, String customerName, String coffeShopName) {
     this.orderId = orderId;
