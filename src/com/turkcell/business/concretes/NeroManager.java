@@ -6,10 +6,10 @@ import com.turkcell.dataAccess.abstracts.ICoffeShopRepository;
 import com.turkcell.entities.concretes.Branch;
 import com.turkcell.entities.concretes.Customer;
 
-public class NeroManagerAbstract extends AbstractCoffeeShopManager {
+public class NeroManager extends AbstractCoffeeShopManager {
 
 
-  public NeroManagerAbstract(ICoffeShopRepository coffeShopDao,
+  public NeroManager(ICoffeShopRepository coffeShopDao,
       ICustomerService customerService, IOrderService orderService) {
     super(coffeShopDao, customerService, orderService);
   }

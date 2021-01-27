@@ -8,9 +8,9 @@ import com.turkcell.entities.concretes.Customer;
 import com.turkcell.entities.concretes.Order;
 import java.util.stream.Stream;
 
-public class StarbucksManagerAbstract extends AbstractCoffeeShopManager {
+public class StarbucksManager extends AbstractCoffeeShopManager {
 
-  public StarbucksManagerAbstract(
+  public StarbucksManager(
       ICoffeShopRepository coffeShopDao,
       ICustomerService customerService, IOrderService orderService) {
     super(coffeShopDao, customerService, orderService);
