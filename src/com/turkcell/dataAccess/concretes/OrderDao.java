@@ -2,7 +2,7 @@ package com.turkcell.dataAccess.concretes;
 
 import com.turkcell.dataAccess.abstracts.IOrderDao;
 import com.turkcell.entities.concretes.Order;
-import com.turkcell.entities.Dtos.OrderWithCustomerDto;
+import com.turkcell.entities.dtos.OrderWithCustomerDto;
 import java.util.Collections;
 import java.util.List;
 import java.util.logging.Logger;

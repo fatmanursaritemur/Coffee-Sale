@@ -1,4 +1,4 @@
-package com.turkcell.entities.Dtos;
+package com.turkcell.entities.dtos;
 
 public class OrderWithCustomerDto {
   private int orderId ;
