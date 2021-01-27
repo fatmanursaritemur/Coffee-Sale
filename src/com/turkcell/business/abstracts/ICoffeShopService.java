@@ -3,6 +3,7 @@ package com.turkcell.business.abstracts;
 import com.turkcell.entities.concretes.Branch;
 import com.turkcell.entities.concretes.CoffeeShop;
 import com.turkcell.entities.concretes.Customer;
+import com.turkcell.entities.concretes.Order;
 import java.util.List;
 
 public interface ICoffeShopService {
@@ -12,4 +13,5 @@ public interface ICoffeShopService {
   void deleteAll();
   void addCustomer(Customer customer) throws Exception;
   void addBranch(Branch branch);
+  void addOrder(Order order);
 }

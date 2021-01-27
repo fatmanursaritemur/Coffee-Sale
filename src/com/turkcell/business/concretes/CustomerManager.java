@@ -42,4 +42,11 @@ public class CustomerManager implements ICustomerService {
   public void findById(int id) {
 customerDao.findById(id);
   }
+
+  @Override
+  public void increaseCustomerPoint(Customer customer, double num) {
+    customer.setPoint(customer.getPoint()+num);
+  }
+
+
 }

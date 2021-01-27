@@ -1,16 +1,19 @@
 package com.turkcell.business.concretes;
 
 import com.turkcell.business.abstracts.ICustomerService;
+import com.turkcell.business.abstracts.IOrderService;
 import com.turkcell.dataAccess.abstracts.ICoffeShopRepository;
 import com.turkcell.entities.concretes.Branch;
 import com.turkcell.entities.concretes.Customer;
+import com.turkcell.entities.concretes.Order;
 import java.util.stream.Stream;
 
-public class StarbucksManager extends CoffeeShopManager {
+public class StarbucksManagerAbstract extends AbstractCoffeeShopManager {
 
-  public StarbucksManager(ICoffeShopRepository coffeShopDao,
-      ICustomerService customerService) {
-    super(coffeShopDao, customerService);
+  public StarbucksManagerAbstract(
+      ICoffeShopRepository coffeShopDao,
+      ICustomerService customerService, IOrderService orderService) {
+    super(coffeShopDao, customerService, orderService);
   }
 
   @Override
@@ -32,4 +35,9 @@ public class StarbucksManager extends CoffeeShopManager {
         .noneMatch(customer.getCustomerName()::startsWith);
   }
 
+  @Override
+  public void addOrder(Order order) {
+    customerService.increaseCustomerPoint(order.getCustomer(),5);
+    orderService.add(order);
+  }
 }

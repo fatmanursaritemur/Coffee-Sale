@@ -10,4 +10,5 @@ public interface ICustomerService {
   void deleteAll();
   void delete(Customer customer);
   void findById(int id);
+  void increaseCustomerPoint(Customer customer, double num);
 }
